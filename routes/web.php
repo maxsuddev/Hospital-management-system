@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 //   dd(auth()->user()->roles());
 //});
 
-
 Route::group(['middleware' => ['auth']], function () {
 //    Route::group(['middleware' => ['role_or_permission:super-admin']], function () {
         Route::get('role/{roleId}/give-permission', [RoleController::class, 'addPermissionToRole']);

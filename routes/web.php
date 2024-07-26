@@ -10,10 +10,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-//Route::get('/test', function () {
-//
-//   dd(auth()->user()->roles());
-//});
+
 
 Route::group(['middleware' => ['auth']], function () {
 //    Route::group(['middleware' => ['role_or_permission:super-admin']], function () {
